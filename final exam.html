@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기말고사 핵심 요약 노트</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .blind-active .keyword { color: transparent; background-color: #d1d5db; border-radius: 4px; cursor: pointer; user-select: none; }
+        .blind-active .keyword:hover { background-color: #9ca3af; }
+        .blind-active .keyword.revealed { color: #4338ca; background-color: #e0e7ff; }
+        .keyword { font-weight: 700; color: #4338ca; background-color: #e0e7ff; padding: 0 4px; border-radius: 4px; }
+        body { -webkit-tap-highlight-color: transparent; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans pb-10">
+    <header class="bg-white sticky top-0 z-10 shadow-sm px-4 py-3 flex justify-between items-center border-b border-gray-100">
+        <div>
+            <h1 class="text-lg font-black text-gray-800 tracking-tight">Digital Art Edu</h1>
+            <p class="text-xs text-gray-500 font-medium">기말고사 핵심 요약 노트 (전체)</p>
+        </div>
+        <button onclick="toggleBlindMode()" id="blindBtn" class="bg-gray-100 text-gray-600 px-3 py-1.5 rounded-full text-xs font-bold transition-all border border-gray-200">
+            암기 모드 OFF
+        </button>
+    </header>
+
+    <main class="p-4 max-w-2xl mx-auto space-y-8">
+        <!-- Section 1 -->
+        <section>
+            <div class="mb-4 border-b border-gray-200 pb-2">
+                <h2 class="text-xl font-bold text-indigo-600 flex items-center gap-2">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                   Ⅰ. 배경과 전환
+                </h2>
+                <p class="text-sm text-gray-500">Why: 왜 지금 디지털 예술 교육인가?</p>
+            </div>
+            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 mb-4 rounded-r-lg text-sm text-amber-900">
+                <strong>💡 출제 포인트:</strong> 비교 문제에서는 '작가 이름'이나 '제작 방식'의 차이를 묻는 구체적 문항에 대비하세요.
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-sm border p-4 mb-4">
+                <h3 class="font-bold text-gray-800 mb-3">1. 패러다임의 전환</h3>
+                <div class="overflow-x-auto border rounded-lg">
+                    <table class="w-full text-xs text-left whitespace-nowrap">
+                        <thead class="bg-gray-100 text-gray-700 border-b">
+                            <tr><th class="p-3">구분</th><th class="p-3">피지컬 아트</th><th class="p-3">디지털 아트</th></tr>
+                        </thead>
+                        <tbody class="divide-y text-gray-600">
+                            <tr><td class="p-3 font-semibold bg-gray-50">정의/재료</td><td class="p-3">물리적 재료</td><td class="p-3">SW/HW</td></tr>
+                            <tr><td class="p-3 font-semibold bg-gray-50">제작 방식</td><td class="p-3">수작업 (아날로그)</td><td class="p-3">디지털 툴</td></tr>
+                            <tr><td class="p-3 font-semibold bg-gray-50">특징</td><td class="p-3">원본성, 희소성</td><td class="p-3"><span class="keyword">무한 복제</span>, 상호작용</td></tr>
+                            <tr class="bg-indigo-50"><td class="p-3 font-semibold text-indigo-800">대표 예시</td><td class="p-3">모딜리아니, 로댕</td><td class="p-3 text-indigo-700"><span class="keyword">비플 (NFT)</span><br/><span class="keyword">리픽 아나돌</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+             <div class="bg-white rounded-xl shadow-sm border p-4">
+                <h3 class="font-bold text-gray-800 mb-3">2. 환경 변화</h3>
+                <ul class="list-disc pl-5 text-sm space-y-2 text-gray-600">
+                    <li><strong>Z세대:</strong> 기술+창의성+소통 통합 필수.</li>
+                    <li><strong>포스트 팬데믹:</strong> 디지털은 보조가 아닌 <span class="keyword">기본 환경</span>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section>
+             <div class="mb-4 border-b border-gray-200 pb-2">
+                <h2 class="text-xl font-bold text-indigo-600 flex items-center gap-2">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+                   Ⅱ. 도구와 개념
+                </h2>
+                <p class="text-sm text-gray-500">What: 우리는 무엇을 다루는가?</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border p-4 mb-4">
+                <h3 class="font-bold text-gray-800 mb-3">1. 디지털 아트 유형</h3>
+                <div class="space-y-4 text-sm">
+                    <div class="border-l-4 border-indigo-500 pl-3"><span class="font-bold">제너레이티브 아트:</span> 알고리즘 생성. (예: <span class="keyword">만프레드 모어</span>)</div>
+                    <div class="border-l-4 border-pink-500 pl-3"><span class="font-bold">인터랙티브 아트:</span> 관객 참여 필수. (예: <span class="keyword">카밀 우터백</span>)</div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border p-4">
+                <h3 class="font-bold text-gray-800 mb-3">2. 생성형 AI 기술 (암기)</h3>
+                <div class="grid grid-cols-1 gap-2 text-sm">
+                    <div class="bg-gray-50 p-2 rounded"><strong>LLM:</strong> GPT, <span class="keyword">MS Copilot</span></div>
+                    <div class="bg-gray-50 p-2 rounded"><strong>Image/Video:</strong> Midjourney, <span class="keyword">Sora</span>, <span class="keyword">VASA-1</span></div>
+                    <div class="bg-gray-50 p-2 rounded"><strong>Audio:</strong> <span class="keyword">Jukebox</span>, Aiva</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section>
+             <div class="mb-4 border-b border-gray-200 pb-2">
+                <h2 class="text-xl font-bold text-indigo-600 flex items-center gap-2">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h13l4-3.5L18 6Z"/><path d="M12 13v9"/><path d="M12 2v4"/></svg>
+                   Ⅲ. 방법론과 실천
+                </h2>
+                <p class="text-sm text-gray-500">How: 어떻게 가르칠 것인가?</p>
+            </div>
+             <div class="bg-amber-50 border-l-4 border-amber-500 p-4 mb-4 rounded-r-lg text-sm text-amber-900">
+                <strong>💡 출제 포인트:</strong> ADDIE 모형의 각 단계에 'ZEP' 같은 구체적 플랫폼 활동을 대입해서 서술해야 고득점입니다.
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border p-4 mb-4">
+                <h3 class="font-bold text-gray-800 mb-3">1. 디지털 예술 특화 ADDIE</h3>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex gap-2"><span class="bg-indigo-600 text-white text-xs px-2 py-0.5 rounded font-bold w-12 text-center">A</span> <span>학습자(기기 익숙도), 환경(ZEP) 분석</span></li>
+                    <li class="flex gap-2"><span class="bg-indigo-600 text-white text-xs px-2 py-0.5 rounded font-bold w-12 text-center">D</span> <span><span class="keyword">미션 기반 학습</span>, 상호작용 설계</span></li>
+                    <li class="flex gap-2"><span class="bg-indigo-600 text-white text-xs px-2 py-0.5 rounded font-bold w-12 text-center">D</span> <span><span class="keyword">ZEP 맵</span> 구축, 자료 개발</span></li>
+                    <li class="flex gap-2"><span class="bg-indigo-600 text-white text-xs px-2 py-0.5 rounded font-bold w-12 text-center">I</span> <span>촉진자 역할, 돌발상황 대응</span></li>
+                    <li class="flex gap-2"><span class="bg-indigo-600 text-white text-xs px-2 py-0.5 rounded font-bold w-12 text-center">E</span> <span>과정 평가(로그), <span class="keyword">환류(피드백)</span></span></li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border p-4">
+                <h3 class="font-bold text-gray-800 mb-3">2. 교수자 역량</h3>
+                <ul class="list-disc pl-5 text-sm space-y-1 text-gray-600">
+                    <li>AI를 <span class="keyword">창의적 파트너</span>로 활용 (Collaboration).</li>
+                    <li>메타버스 가상 환경 수업 운영 (Immersive).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section>
+             <div class="mb-4 border-b border-gray-200 pb-2">
+                <h2 class="text-xl font-bold text-indigo-600 flex items-center gap-2">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                   Ⅳ. 비판적 성찰 & 용어
+                </h2>
+                <p class="text-sm text-gray-500">Risk: 놓치기 쉬운 킬러 문항</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border p-4">
+                 <div class="space-y-3 text-sm">
+                    <div class="bg-gray-50 p-3 rounded border-l-2 border-red-400">
+                      <span class="font-bold block text-red-800">할루시네이션 (Hallucination)</span>
+                      <p>AI가 사실이 아닌 것을 생성. 대응: <span class="keyword">비판적 사고</span> 및 팩트 체크.</p>
+                    </div>
+                     <div class="bg-gray-50 p-3 rounded border-l-2 border-gray-400">
+                      <span class="font-bold block text-gray-800">파운데이션 모델</span>
+                      <p>범용성 높은 대규모 모델 (GPT, PaLM).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="text-center text-gray-400 text-xs mt-10 mb-4">
+            Digital Arts Education Final Exam Summary
+        </div>
+    </main>
+
+    <script>
+        let blindMode = false;
+        function toggleBlindMode() {
+            blindMode = !blindMode;
+            document.body.classList.toggle('blind-active');
+            const btn = document.getElementById('blindBtn');
+            if (blindMode) {
+                btn.innerText = '암기 모드 ON';
+                btn.className = 'bg-indigo-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg transition-all border border-indigo-600';
+                document.querySelectorAll('.keyword').forEach(el => el.classList.remove('revealed'));
+            } else {
+                btn.innerText = '암기 모드 OFF';
+                btn.className = 'bg-gray-100 text-gray-600 px-3 py-1.5 rounded-full text-xs font-bold transition-all border border-gray-200';
+            }
+        }
+        
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('keyword') && document.body.classList.contains('blind-active')) {
+                e.target.classList.toggle('revealed');
+            }
+        });
+    </script>
+</body>
+</html>
+    
